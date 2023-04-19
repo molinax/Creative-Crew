@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{magical-lollipop-059bd0.netlify.app/)}">
+    <a href="https://magical-lollipop-059bd0.netlify.app/)">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{magical-lollipop-059bd0.netlify.app/}">
+    <a href="https://magical-lollipop-059bd0.netlify.app/">
       Solution
     </a>
     <span> | </span>
