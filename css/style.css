@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* Colors */
+    --title: #000;
+    --paragraph: #000;
+
+    /* Font family */
+    --title-pt-serif: 'PT Serif', serif;
+    --title-poppins: 'Poppins', sans-serif;
+    --paragraph-poppins: 'Poppins', sans-serif;
+    --paragraph-range: 'PT Serif', serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--title-pt-serif);
+    font-weight: 700;
+    color: var(--title);
+}
+
+h2,
+h3 {
+    font-family: var(--title-poppins);
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--paragraph-poppins);
+    font-weight: 400;
+}
+
+img {
+    width: 150px;
+    height: 230px;
+    object-fit: cover;
+    display: inline;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    padding: 4rem 2.5rem 5rem 2.5rem;
+    min-height: 100vh;
+    max-width: 1000px; 
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    max-width: 22rem;
+}
+
+header section h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main section article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+main section article .name {
+    font-size: .95rem;
+}
+
+main section article .card2,
+main section article .card4,
+main section article .card6 {
+    margin-top: 2.5rem;
+}
+
+main section article .article-card .article-card-img-container {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+main section article .article-card .article-card-img-container span {
+    position: absolute;
+    top: 45px;
+    left: 110px;
+
+    font-family: var(--paragraph-poppins);
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    font-size: .75rem;
+}
+
+main section article .article-card .article-card-img-container .card1-span {
+    left: 110px;
+}
+
+main section article .article-card .article-card-img-container .card2-span {
+    top: 38px;
+    left: 120px;
+}
+
+main section article .article-card .article-card-img-container .card3-span {
+    top: 28px;
+    left: 130px;
+}
+
+main section article .article-card .article-card-img-container .card4-span {
+    top: 35px;
+    left: 123px;
+}
+
+main section article .article-card .article-card-img-container .card5-span,
+main section article .article-card .article-card-img-container .card6-span {
+    top: 30px;
+    left: 130px;
+}
+
+@media screen and (min-width: 561px) {
+    main section article .card5 {
+        margin-top: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    img {
+        width: 250px;
+        height: 350px;
+    }
+
+    main section article .card5 {
+        margin-top: 0rem;
+    }
+    
+    main section article .article-card .article-card-img-container .card1-span {
+        left: 215px;
+    }
+    
+    main section article .article-card .article-card-img-container .card2-span {
+        top: 38px;
+        left: 222px
+    }
+    
+    main section article .article-card .article-card-img-container .card3-span {
+        top: 28px;
+        left: 232px;
+    }
+    
+    main section article .article-card .article-card-img-container .card4-span {
+        top: 35px;
+        left: 225px;
+    }
+    
+    main section article .article-card .article-card-img-container .card5-span,
+    main section article .article-card .article-card-img-container .card6-span {
+        top: 30px;
+        left: 232px;
+    }
+}
+
+@media screen and (min-width: 894px) {
+    main section article .card5 {
+        margin-top: 4.5rem;
+    }
+}
